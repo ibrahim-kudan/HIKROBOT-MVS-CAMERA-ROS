@@ -683,8 +683,8 @@ namespace camera
             image_empty_count = 0; //空图帧数
             //转换图像格式为BGR8
 
-            stConvertParam.nWidth = 3072;                               //ch:图像宽 | en:image width
-            stConvertParam.nHeight = 2048;                              //ch:图像高 | en:image height
+            stConvertParam.nWidth = width;                               //ch:图像宽 | en:image width
+            stConvertParam.nHeight = height;                              //ch:图像高 | en:image height
             stConvertParam.pSrcData = m_pBufForDriver;                  //ch:输入数据缓存 | en:input data buffer
             stConvertParam.nSrcDataLen = MAX_IMAGE_DATA_SIZE;           //ch:输入数据大小 | en:input data size
             stConvertParam.enDstPixelType = PixelType_Gvsp_BGR8_Packed; //ch:输出像素格式 | en:output pixel format                      //! 输出格式 RGB
