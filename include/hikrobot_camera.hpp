@@ -70,7 +70,6 @@ namespace camera
         //********** 读图10个相机的原始图像 ********************************/
         void ReadImg(cv::Mat &image);
 
-    private:
         //********** camera_info.handle ******************************/
         hikrobot_camera camera_info;
         //********** nThreadID ******************************/
@@ -708,7 +707,7 @@ namespace camera
             pthread_mutex_unlock(&mutex);
             double time = ((double)cv::getTickCount() - start) / cv::getTickFrequency();
             //*************************************testing img********************************//
-            //std::cout << "HK_camera,Time:" << time << "\tFPS:" << 1 / time << std::endl;
+            // std::cout << "HK_camera,Time:" << time << "\tFPS:" << 1 / time << std::endl;
             //imshow("HK vision",frame);
             //waitKey(1);
         }
